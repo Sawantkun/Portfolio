@@ -1,0 +1,1163 @@
+#About {
+  height: 100vh;
+  width: 100%;
+  font-family: "TTsuper";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+#About .Acontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+#About .Acontainer .Acontent {
+  width: 35%;
+  padding-left: 2%;
+}
+
+#About .Acontainer .Acontent h1:first-of-type {
+  font-family: "TTsuper";
+  margin: 30px 0 5px 0;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #e6e4e4;
+}
+
+#About .Acontainer .Acontent h1 {
+  font-family: "TTsuper";
+  margin: 30px 0 0 0;
+  font-size: 2rem;
+  color: #e6e4e4;
+}
+
+#About .Acontainer .Acontent .typerwriter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "TTsuperB";
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #dad8d8;
+}
+
+#About .Acontainer .Acontent #Type {
+  font-family: "TTsuperB";
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+#About .Acontainer .Acontent p {
+  color: #dfdfdf;
+  font-family: "TTsuperM";
+  line-height: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+#About .Acontainer .Acontent .liner {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  opacity: 0.4;
+}
+
+#About .Acontainer .Acontent button {
+  margin-top: 5px;
+  font-family: "TTsuper";
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #cacaca;
+  color: #cacaca;
+  font-size: 1.2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#About .Acontainer .Acontent button a {
+  color: #cacaca;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#About .Acontainer .Acontent button:hover a {
+  color: var(--secondary-color);
+}
+
+#About .Acontainer .Acontent button:hover {
+  background-color: #dbdada;
+  border: 1px solid var(--primary-color);
+}
+
+#About .Acontainer .Acontent img {
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+
+#About .Acontainer .Acontent img:last-of-type {
+  -webkit-transform: translateY(-9px);
+          transform: translateY(-9px);
+}
+
+#About .Acontainer .illustration {
+  width: 40%;
+}
+
+#About .Acontainer .illustration canvas {
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+#projects {
+  height: 100%;
+  width: 100%;
+  font-family: "TTsuperM";
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5% 14% 0 14%;
+}
+
+#projects h1 {
+  font-family: "TTsuper";
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 3.5rem;
+  text-align: left;
+}
+
+#projects .liner {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 50%;
+  height: 2px;
+  background-color: var(--primary-color);
+  opacity: 0.4;
+}
+
+#projects .project1 {
+  margin-top: 80px;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#projects .project1 .Pleft {
+  position: absolute;
+  width: 55%;
+  height: 100%;
+}
+
+#projects .project1 .Pleft img {
+  width: 100%;
+  height: 350px;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#projects .project1 .Pleft::after {
+  content: '';
+  background: rgba(25, 25, 26, 0.596);
+  z-index: 2;
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#projects .project1 .Pleft:hover::after {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#projects .project1 .Pright {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 50%;
+  height: 100%;
+  text-align: right;
+}
+
+#projects .project1 .Pright p, #projects .project1 .Pright h2 {
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+#projects .project1 .Pright p {
+  color: rgba(255, 255, 255, 0.418);
+}
+
+#projects .project1 .Pright h2 {
+  font-size: 2rem;
+}
+
+#projects .project1 .Pright .Pdefine {
+  background-color: #181717;
+  line-height: 22px;
+  padding: 25px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+#projects .project1 .Pright .Pdefine p {
+  font-family: "TTsuperM";
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.849);
+  font-size: 1.2rem;
+}
+
+#projects .project1 .Pright .Plang span {
+  padding-left: 20px;
+  font-size: 1.2rem;
+}
+
+#projects .project1 .Pright .Plink img {
+  padding: 20px;
+  padding-right: 0px;
+  cursor: pointer;
+}
+
+#projects .project2 {
+  -webkit-transform: translateY(850px);
+          transform: translateY(850px);
+  margin-top: 80px;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#projects .project2 .Pleft {
+  position: absolute;
+  width: 55%;
+  height: 100%;
+}
+
+#projects .project2 .Pleft img {
+  width: 100%;
+  height: 350px;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#projects .project2 .Pleft::after {
+  border-radius: 5px;
+  content: '';
+  background-color: rgba(25, 25, 26, 0.596);
+  z-index: 1;
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#projects .project2 .Pleft:hover::after {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#projects .project2 .Pright {
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 50%;
+  height: 100%;
+  text-align: right;
+}
+
+#projects .project2 .Pright p, #projects .project2 .Pright h2 {
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+#projects .project2 .Pright p {
+  color: rgba(255, 255, 255, 0.418);
+}
+
+#projects .project2 .Pright h2 {
+  font-size: 2rem;
+}
+
+#projects .project2 .Pright .Pdefine {
+  background-color: #181717;
+  line-height: 22px;
+  padding: 25px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+#projects .project2 .Pright .Pdefine p {
+  font-family: "TTsuperM";
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.849);
+}
+
+#projects .project2 .Pright .Plang span {
+  padding-left: 20px;
+  font-size: 1.2rem;
+}
+
+#projects .project2 .Pright .Plink img {
+  padding: 20px;
+  padding-right: 0px;
+  cursor: pointer;
+}
+
+#projects .project3 {
+  -webkit-transform: translateY(450px);
+          transform: translateY(450px);
+  margin-top: 80px;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#projects .project3 .Pleft1 {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 50%;
+  height: 100%;
+  text-align: left;
+}
+
+#projects .project3 .Pleft1 p, #projects .project3 .Pleft1 h2 {
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+#projects .project3 .Pleft1 p {
+  color: rgba(255, 255, 255, 0.418);
+}
+
+#projects .project3 .Pleft1 h2 {
+  font-size: 2rem;
+}
+
+#projects .project3 .Pleft1 .Pdefine1 {
+  background-color: #181717;
+  line-height: 22px;
+  padding: 25px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+#projects .project3 .Pleft1 .Pdefine1 p {
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.849);
+  font-size: 1.2rem;
+  font-family: "TTsuperM";
+}
+
+#projects .project3 .Pleft1 .Plang1 span {
+  padding-right: 20px;
+  font-size: 1.2rem;
+}
+
+#projects .project3 .Pleft1 .Plink1 img {
+  padding: 20px;
+  padding-left: 0px;
+  cursor: pointer;
+}
+
+#projects .project3 .Pright1 {
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  right: 0;
+  z-index: -1;
+}
+
+#projects .project3 .Pright1 img {
+  width: 100%;
+  height: 350px;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#projects .project3 .Pright1::after {
+  content: '';
+  border-radius: 5px;
+  background-color: rgba(25, 25, 26, 0.596);
+  z-index: 2;
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#projects .project3 .Pright1:hover::after {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#projects .Plink img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#projects .Plink1 img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#projects .Plink img:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+#projects .Plink1 img:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+#projects button {
+  padding: 10px 20px;
+  font-family: "TTsuper";
+  background: transparent;
+  color: rgba(255, 255, 255, 0.664);
+  letter-spacing: 1px;
+  font-size: 1rem;
+  border: 1.5px solid white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#projects button a {
+  text-decoration: none;
+  color: white;
+}
+
+#projects button:hover {
+  color: black;
+  background-color: white;
+}
+
+#projects button:hover a {
+  color: black;
+}
+
+#contact {
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  -webkit-transform: translateY(1200px);
+          transform: translateY(1200px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  font-family: "TTsuper";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .Ctop {
+  width: 40%;
+  text-align: center;
+}
+
+#contact .Ctop p:first-of-type, #contact .Ctop h1 {
+  padding-bottom: 15px;
+}
+
+#contact .Ctop p:first-of-type {
+  margin-top: 50px;
+  color: #e2e2e2;
+  font-size: 1.9rem;
+}
+
+#contact .Ctop button {
+  font-family: "TTsuper";
+  font-size: 1.2rem;
+  margin-top: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+#contact .Ctop button:hover {
+  color: black;
+  border: 1px solid white;
+  background-color: white;
+}
+
+#contact .Ctop h1 {
+  color: rgba(233, 233, 233, 0.945);
+  font-size: 4rem;
+}
+
+#contact .Ctop p {
+  color: #8b8b8b;
+  font-family: "TTsuperM";
+  font-size: 1.3rem;
+  line-height: 25px;
+}
+
+#contact .Cbottom {
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+}
+
+#contact .Cbottom p {
+  font-size: 1rem;
+  line-height: 25px;
+  font-family: "TTsuperM";
+  letter-spacing: 1px;
+}
+
+@font-face {
+  font-family: "TTsuper";
+  src: url("../Media/fonts/TTSupermolotNeue-DemiBold.ttf");
+}
+
+@font-face {
+  font-family: "TTsuperM";
+  src: url("../Media/Fonts/TTSupermolotNeue-CondMed.ttf");
+}
+
+@font-face {
+  font-family: "TTsuperB";
+  src: url("../Media/Fonts/TTSupermolotNeue-ExtraBold.ttf");
+}
+
+:root {
+  --primary-color:#F2F2F2;
+  --secondary-color:rgb(5, 5, 5);
+  --tertiary-color:black;
+}
+
+::-moz-selection {
+  color: var(--primary-color);
+  background-color: #4e4b4b;
+}
+
+::selection {
+  color: var(--primary-color);
+  background-color: #4e4b4b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--secondary-color);
+  overflow-x: hidden;
+  position: relative;
+}
+
+.preloader {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: black;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  font-family: "TTsuper";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.preloader h1 {
+  color: white;
+}
+
+.preloader .bar {
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.281);
+  height: 2px;
+  margin: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.preloader .bar::after {
+  width: 100%;
+  content: '';
+  position: absolute;
+  background: white;
+  height: 2px;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  -webkit-animation: width 5s ease-in-out;
+          animation: width 5s ease-in-out;
+}
+
+@-webkit-keyframes width {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes width {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.preloader h2 {
+  color: white;
+}
+
+.HamburgerMenu {
+  font-family: "TTsuper";
+  -webkit-clip-path: circle(50% at 100% 3%);
+          clip-path: circle(50% at 100% 3%);
+  background: transparent;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 2;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+  -webkit-transition-property: background, width,height;
+  transition-property: background, width,height;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.HamburgerMenu ul {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 14%;
+  right: 10.5%;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.HamburgerMenu ul li {
+  font-size: 3rem;
+  line-height: 70px;
+}
+
+.HamburgerMenu ul li a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+body::-webkit-scrollbar {
+  background: transparent;
+  width: 5px;
+  margin-right: 10px;
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(151, 151, 151, 0.397);
+  border-radius: 5px;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+}
+
+.main #particles-js {
+  width: 100%;
+  height: 100vh;
+}
+
+.main #home {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+
+.main #home a {
+  z-index: 1;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.main #home .logo {
+  color: #cacaca;
+  z-index: 1;
+  cursor: pointer;
+  position: fixed;
+  font-family: "TTsuper";
+  top: 35px;
+  left: 40px;
+  font-size: 1.5rem;
+  text-align: left;
+  width: 80px;
+}
+
+.main #home .logo:hover {
+  color: white;
+}
+
+.main #home .Hname {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  text-align: center;
+  font-family: "TTsuper";
+  font-size: 1.2rem;
+  cursor: default;
+  text-transform: uppercase;
+  color: #cacaca;
+}
+
+.main #home .Hname:hover {
+  color: white;
+}
+
+.main #home .menu {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 35px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 35px;
+  right: 45px;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 2;
+}
+
+.main #home .menu:hover .Hline {
+  -webkit-transform: Rotate(90deg);
+          transform: Rotate(90deg);
+}
+
+.main #home .menu:hover .Hline::after {
+  width: 100%;
+  background-color: white;
+}
+
+.main #home .menu:hover .Hline::before {
+  width: 100%;
+  background-color: white;
+}
+
+.main #home .Hline::after, .main #home .Hline::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 75%;
+  background-color: #cacaca;
+  border-radius: 10px;
+}
+
+.main #home .Hline::before {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main #home .Hline::after {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main #home .Hline {
+  height: 2px;
+  width: 100%;
+  background-color: #cacaca;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main #home .open .Hline {
+  background: transparent;
+}
+
+.main #home .open .Hline::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.main #home .open .Hline::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.main #home .heading {
+  margin-top: 200px;
+}
+
+.main #home h1 {
+  width: 100%;
+  padding: 0.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: "TTsuper";
+  font-size: 5rem;
+  color: #e6e4e4;
+  overflow: hidden;
+}
+
+.main #home h1 span {
+  background: black;
+  display: inline-block;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.main #home .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main #home .social .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main #home .social .socials img {
+  opacity: 0.7;
+  margin-bottom: 14px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 5px;
+}
+
+.main #home .social .socials img:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  opacity: 1;
+}
+
+.main #home .social .line {
+  width: 0.17em;
+  height: 100px;
+  background-color: #8d8b8b;
+}
+
+.main #home .mouse-scroll,
+.main #home .mouse-scroll::after,
+.main #home .mouse-scroll::before {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -80px);
+          transform: translate(-50%, -80px);
+}
+
+.main #home .mouse-scroll::after {
+  content: '';
+  width: 5px;
+  height: 7px;
+  background: #8d8b8b;
+  border-radius: 5px;
+  -webkit-transform: translate(-10%, 4px);
+          transform: translate(-10%, 4px);
+  margin-left: -2px;
+  -webkit-animation: scrolldown 2.5s ease-in-out infinite;
+          animation: scrolldown 2.5s ease-in-out infinite;
+}
+
+.main #home .mouse-scroll {
+  width: 20px;
+  height: 30px;
+  -webkit-box-shadow: inset 0 0 0 2px #8d8b8b;
+          box-shadow: inset 0 0 0 2px #8d8b8b;
+  border-radius: 23px;
+  position: absolute;
+  bottom: -70px;
+}
+
+@-webkit-keyframes scrolldown {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 1;
+  }
+}
+
+@keyframes scrolldown {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 1;
+  }
+}
+
+.main #home .theme {
+  cursor: pointer;
+  position: fixed;
+  height: 20vh;
+  bottom: 0;
+  right: -58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main #home .theme span {
+  color: #cacaca;
+  -webkit-transform: rotate(90deg) translateX(-165px);
+          transform: rotate(90deg) translateX(-165px);
+  font-family: "TTsuperM";
+  font-size: 0.9rem;
+  padding: 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.main #home .theme span:hover {
+  color: white;
+  -webkit-transform: rotate(90deg) translateX(-170px);
+          transform: rotate(90deg) translateX(-170px);
+}
+
+.main #home .theme .line {
+  position: fixed;
+  width: 0.12em;
+  height: 100px;
+  bottom: 0;
+  background-color: #8d8b8b;
+}
+/*# sourceMappingURL=main.css.map */

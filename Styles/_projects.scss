@@ -1,0 +1,323 @@
+#projects{
+    height: 100%;
+    width: 100%;
+    font-family: "TTsuperM";
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 14% 0 14%;
+    h1{
+    font-family: "TTsuper";
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+    text-align: left;
+    }
+    .liner{
+        margin-top: 5px;
+        margin-bottom: 20px;
+        width: 50%;
+        height: 2px;
+        background-color: var(--primary-color);
+        opacity: 0.4;
+    }
+    .project1{
+        margin-top: 80px;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        .Pleft{
+            position: absolute;
+            width: 55%;
+            height: 100%;
+            
+            img{
+                width: 100%;
+                height: 350px;
+                z-index: -1;
+                object-fit: cover;
+                cursor: pointer;
+                border-radius: 5px;
+
+            }
+        }
+        .Pleft::after{
+            content: '';
+            background: rgba(25, 25, 26, 0.596);
+            z-index: 2;
+            height: 350px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            cursor: pointer;
+            border-radius: 5px;
+
+            transition: all 0.3s ease-in-out;
+        }
+        .Pleft:hover::after{
+            background-color: rgba(0, 0, 0, 0);
+        }
+        .Pright{   
+            position: absolute; 
+            right: 0;
+            top: 20px;
+            width: 50%;
+            height: 100%;
+            text-align: right;
+            p,h2{
+                letter-spacing: 2px;
+                margin-bottom: 15px;
+            }
+            p{
+                color: rgba(255, 255, 255, 0.418);
+            }
+            h2{
+                font-size: 2rem;
+            }
+            .Pdefine{
+                background-color: rgb(24, 23, 23);
+                line-height: 22px;
+                padding: 25px ;
+                padding-left: 15px;
+                padding-bottom: 15px;
+                margin-top: 30px;
+                margin-bottom: 25px;
+                border-radius: 5px;
+                z-index: 1;
+                p{
+                    font-family: "TTsuperM";
+                    letter-spacing: 1px;
+                    color: rgba(255, 255, 255, 0.849);
+                    font-size: 1.2rem;
+                }
+            }
+            .Plang{
+                span{
+                    padding-left: 20px;
+                    font-size: 1.2rem;
+                }
+            }
+            .Plink{
+                img{
+                    padding: 20px;
+                    padding-right: 0px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .project2{
+        transform: translateY(850px);
+        margin-top: 80px;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        .Pleft{
+            position: absolute;
+            width: 55%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 350px;
+                z-index: -1;
+                object-fit: cover;
+                cursor: pointer;
+                border-radius: 5px;
+
+            }
+        }
+        .Pleft::after{
+            border-radius: 5px;
+
+            content: '';
+            background-color: rgba(25, 25, 26, 0.596);
+            z-index: 1;
+            height: 350px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .Pleft:hover::after{
+            background-color: rgba(0, 0, 0, 0);
+        }
+        .Pright{   
+            z-index: 2;
+            position: absolute; 
+            right: 0;
+            top: 20px;
+            width: 50%;
+            height: 100%;
+            text-align: right;
+            p,h2{
+                letter-spacing: 2px;
+                margin-bottom: 15px;
+            }
+            p{
+                color: rgba(255, 255, 255, 0.418);
+            }
+            h2{
+                font-size: 2rem;
+            }
+            .Pdefine{
+                background-color: rgb(24, 23, 23);
+                line-height: 22px;
+                padding: 25px ;
+                padding-left: 15px;
+                padding-bottom: 15px;
+                margin-top: 30px;
+                margin-bottom: 25px;
+                border-radius: 5px;
+
+                p{
+                    font-family: "TTsuperM";
+                    font-size: 1.2rem;
+                    letter-spacing: 1px;
+                    color: rgba(255, 255, 255, 0.849);
+                }
+            }
+            .Plang{
+                span{
+                    padding-left: 20px;
+                    font-size: 1.2rem;
+                }
+            }
+            .Plink{
+                img{
+                    padding: 20px;
+                    padding-right: 0px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .project3{
+        transform: translateY(450px);
+        margin-top: 80px;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        .Pleft1{   
+            position: absolute; 
+            left: 0;
+            top: 20px;
+            width: 50%;
+            height: 100%;
+            text-align: left;
+            p,h2{
+                letter-spacing: 2px;
+                margin-bottom: 15px;
+            }
+            p{
+                color: rgba(255, 255, 255, 0.418);
+            }
+            h2{
+                font-size: 2rem;
+            }
+            .Pdefine1{
+                background-color: rgb(24, 23, 23);
+                line-height: 22px;
+                padding: 25px ;
+                padding-left: 15px;
+                padding-bottom: 15px;
+                margin-top: 30px;
+                margin-bottom: 25px;
+                border-radius: 5px;
+
+                p{
+                    letter-spacing: 1px;
+                    color: rgba(255, 255, 255, 0.849);
+                    font-size: 1.2rem;
+                    font-family: "TTsuperM";
+                }
+            }
+            .Plang1{
+                span{
+                    padding-right: 20px;
+                    font-size: 1.2rem;
+                }
+            }
+            .Plink1{
+                img{
+                    padding: 20px;
+                    padding-left: 0px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .Pright1{
+            position: absolute;
+            width: 55%;
+            height: 100%;
+            right: 0;
+            z-index: -1;
+            img{
+                width: 100%;
+                height: 350px;
+                z-index: -1;
+                object-fit: cover;
+                cursor: pointer;
+                border-radius: 5px;
+
+            }
+        }
+        .Pright1::after{
+            content: '';
+            border-radius: 5px;
+
+            background-color: rgba(25, 25, 26, 0.596);
+            z-index: 2;
+            height: 350px;
+            width: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .Pright1:hover::after{
+            background-color: rgba(0, 0, 0, 0);
+        }
+    
+    }
+    .Plink img{
+        transition: all 0.3s ease-in-out;
+    }
+    .Plink1 img{
+        transition: all 0.3s ease-in-out;
+    }
+    .Plink img:hover{
+        transform: translateY(-5px);
+    }
+    .Plink1 img:hover{
+        transform: translateY(-5px);
+    }
+    button{
+        padding:  10px 20px;
+        font-family: "TTsuper";
+        background: transparent;
+        color: rgba(255, 255, 255, 0.664);
+        letter-spacing: 1px;
+        font-size: 1rem;
+        border: 1.5px solid white;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    button a{
+        text-decoration: none;
+        color: white;
+    }
+    button:hover{
+        color: black;
+        background-color: white;
+    }
+    button:hover a{
+        color: black;
+    }
+}

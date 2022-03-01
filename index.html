@@ -1,0 +1,207 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking files -->
+    <link rel="icon" href="./Media/Images/Favicon.png">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="preload" href="./JavaScript/scene.json" as="fetch">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- javascript files  -->
+    <script defer src="./Particles/particles.js"></script>
+    <script defer src="./Particles/demo/js/app.js"></script>
+    <script defer src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js""></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="./JavaScript/script.js"></script>
+    <title>Sawant Kumar</title>
+</head>
+<body>
+    <!-- CUSTOM CURSOR  -->
+    <div class="preloader">
+        <h1>How Would a computer with a tail look like?</h1>
+        <div class="bar"></div>
+        <h2>- Loading -</h2>
+    </div>
+    <div class="HamburgerMenu">
+        <ul>
+            <li><a class="Mlink1" href="#home">HOME</a></li>
+            <li><a class="Mlink2" href="#About">ABOUT</a></li>
+            <li><a class="Mlink3" href="#projects">PROJECTS</a></li>
+            <li><a class="Mlink4" href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="hamburgerelements">
+        
+    </div>
+    <div class="main"">
+        <!-- PARTICLES BACKGROUND EFFECTS -->
+        <div id="particles-js"></div>
+        <!-- HOME PAGE  -->
+        <section id="home">
+            <!-- logo -->
+            <a href="#home"><span class="logo"> SK </span></a>
+            <!-- name -->
+            <span class="Hname">S a w a n t &nbsp; K u m a r</span>
+            <!-- hamburger -->
+            <div class="menu">
+                <div class="Hline"></div>
+            </div>
+            <!-- main heading -->
+            <div class="heading">
+            <h1 class="skew"><span class="reveal"> I build interactive </span></h1><h1 class="skew"><span class="reveal"> websites that run across</span></h1><h1 class="skew"><span class="reveal"> platforms & devices</span></h1></div>
+            <!-- social media links -->
+            <div class="social">
+            <div class="socials">
+                <a href="https://github.com/Sawantkun" target="_blank"><img src="./Media/Icons/github-svgrepo-com.svg" alt=""></a>
+                <a href="https://www.instagram.com/sawantkun/" target="_blank"><img src="./Media/Icons/instagram-svgrepo-com.svg" alt=""></a>
+                <a href="https://twitter.com/Sawantkun" target="_blank"><img src="./Media/Icons/twitter-svgrepo-com.svg" alt=""></a>
+                <a href="" target="_blank"><img src="./Media/Icons/linkedin-svgrepo-com.svg" alt=""></a>
+                <a href="https://www.freecodecamp.org/sawantkun" target="_blank"><img src="./Media/Icons/freecodecamp-svgrepo-com.svg" alt=""></a>
+            </div>
+            <!-- themes button  -->
+            <div class="line"></div>
+            </div>
+        <a href="mailto:kumar.sawant37@gmail.com"><div class="theme">
+                <span>k u m a r . s a w a n t 3 7 @ g m a i l .c o m</span>
+                <div class="line"></div>
+            </div></a>
+            <!-- little mouse scroll animation -->
+            <div class="mouse-scroll"></div>
+        </section>
+        <!-- ABOUT PAGE -->
+        <section id="About">
+            <!-- mian content of about page  -->
+            <div class="Acontainer" >
+            <div class="Acontent skew" data-aos="fade" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <h1>About me</h1>
+                <div class="liner"></div>
+                <!-- type writer effect  -->
+                <div class="typerwriter"> I&nbsp;<div id="Type">am a frontend developer</div></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore inventore a, deserunt voluptate sunt ab, ducimus reprehenderit perspiciatis ea aliquam et dolore vitae? Optio totam, perferendis nam vero incidunt amet?</p>
+                <div class="button">
+                <button><a href="#">Resume</a></button>
+                </div>
+                <h1>My Tech Stack</h1>
+                <div class="tech">
+                    <img src="./Media/Icons/icons8-html-5.svg" alt="">
+                    <img src="./Media/Icons/icons8-css3.svg" alt="">
+                    <img src="./Media/Icons/icons8-javascript.svg" alt="">
+                    <img src="./Media/Icons/icons8-python.svg" alt="">
+                    <img src="./Media/Icons/icons8-sass.svg" alt="">
+                    <img src="./Media/Icons/git-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <!-- 3D illustration canvas  -->
+            <div class="illustration" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                <canvas id="canvas3d"></canvas>
+            </div>
+        </div>
+        </section>
+        <section id="projects">
+           <h1 class="skew">Projects</h1>
+           <div class="liner"></div>
+           <div class="project1 skew">
+            <a href="https://my-tunes-clone.netlify.app/" target="_blank"><div class="Pleft tilt1">
+                  <img src="./Media/Images/2.jpg" alt="" data-aos="fade">
+               </div></a>
+               <div class="Pright" data-aos="fade-left" data-aos-anchor-placement="top-center">
+                  <p>Featured Project</p>
+                  <h2>MyTunes Clone</h2>
+                  <div class="Pdefine">
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora corporis fugiat, hic accusamus repellendus quam harum animi ducimus repellat sed.</p>
+                  </div>
+                  <div class="Plang">
+                      <span>Html</span>
+                      <span>Css</span>
+                      <span>VS Code</span>
+                  </div>
+                  <div class="Plink">
+                    <a href="https://github.com/Sawantkun/MyTunes-Clone" target="_blank"><img src="./Media/Icons/github-svgrepo-com.svg" alt=""></a>
+                      <a href="https://my-tunes-clone.netlify.app/" target="_blank"><img src="./Media/Icons/external-svgrepo-com.svg" alt=""></a>
+                  </div>
+               </div>
+           </div>
+           <div class="project3 skew" >
+            <div class="Pleft1" data-aos="fade-right" data-aos-anchor-placement="top-top">
+                <p>Featured Project</p>
+                <h2>Code Fellas Hackathon</h2>
+                <div class="Pdefine1">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora corporis fugiat, hic accusamus repellendus quam harum animi ducimus repellat sed.</p>
+                </div>
+                <div class="Plang1">
+                    <span>Html</span>
+                    <span>Css</span>
+                    <span>VS Code</span>
+                </div>
+                <div class="Plink1">
+                    <a href="https://github.com/Sawantkun/Code-Fellas-Hackathon-Project/" target="_blank"><img src="./Media/Icons/github-svgrepo-com.svg" alt=""></a>
+                    <a href="https://code-fellas-hackathon-sk.netlify.app/" target="_blank"> <img src="./Media/Icons/external-svgrepo-com.svg" alt=""></a>
+                </div>
+            </div>
+           <a href="https://code-fellas-hackathon-sk.netlify.app/" target="_blank" > <div class="Pright1 tilt2"     data-aos-anchor-placement="center-bottom">
+                <img src="./Media/Images/unknown.png" alt="">  
+            </div></a>
+        </div>
+           <div class="project2 skew">
+            <a href="https://product-page-practice.netlify.app/" target="_blank"><div class="Pleft tilt3">
+               <img src="./Media/Images/3.jpg" alt="">
+            </div></a>
+            <div class="Pright" data-aos="fade-left" data-aos-anchor-placement="top-top" data-aos-delay="600" >
+               <p>Featured Project</p>
+               <h2>Product Landing Page</h2>
+               <div class="Pdefine">
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora corporis fugiat, hic accusamus repellendus quam harum animi ducimus repellat sed.</p>
+               </div>
+               <div class="Plang">
+                   <span>Html</span>
+                   <span>Css</span>
+                   <span>VS Code</span>
+               </div>
+               <div class="Plink">
+                <a href="https://github.com/Sawantkun/Product-Landing-Page" target="_blank"><img src="./Media/Icons/github-svgrepo-com.svg" alt=""></a>
+                   <a href="https://product-page-practice.netlify.app/" target="_blank" data-aos="fade"><img src="./Media/Icons/external-svgrepo-com.svg" alt=""></a>
+               </div>
+               <a href="https://github.com/Sawantkun" target="_blank"> <button> Show More</button></a>
+            </div>
+</section>
+<section id="contact">
+    <div class="Ctop skew" data-aos="fade">
+    <p>What's Next?</p>
+    <h1>Get In Touch</h1>
+    <p>Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    </p>
+    <a href="mailto:kumar.sawant37@gmail.com"><button>Say Hello</button></a>
+</div>
+<div class="Cbottom">
+    <p>Designed & Built by Sawant Kumar</p>
+    <p>2022</p>
+</div>
+</section>
+    <!-- javascript code  -->
+    <script type="module">
+        import { Application } from './JavaScript/runtime.js';
+        const app = new Application();
+        app.load('./JavaScript/scene.json');
+    </script>
+    <script type="text/javascript" src="./JavaScript/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+	VanillaTilt.init(document.querySelector(".tilt1"),{
+		max: 25,
+		speed: 300
+	});
+    VanillaTilt.init(document.querySelector(".tilt2"),{
+		max: 25,
+		speed: 300
+	});
+    VanillaTilt.init(document.querySelector(".tilt3"),{
+		max: 25,
+		speed: 300
+	});
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+#contact{
+    position: relative;
+    z-index:-1;
+    height: 100vh;
+    width: 100%;
+    transform: translateY(1200px);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "TTsuper";
+    align-items: center;
+    .Ctop{
+        width: 40%;
+        text-align: center;
+        p:first-of-type, h1{
+            padding-bottom: 15px;
+        }
+        p:first-of-type{
+            margin-top: 50px;
+            color: rgb(226, 226, 226);
+            font-size: 1.9rem;
+        }
+          
+            button{
+                font-family: "TTsuper";
+                font-size: 1.2rem;
+                margin-top: 50px;
+                padding:10px 20px;
+                cursor: pointer;
+                background:transparent ;
+                border: 1px solid white;
+                color: white;
+                transition: all 0.3s ease-in-out;
+                border-radius: 3px;
+            }
+            button:hover{
+                color: black;
+                border: 1px solid white;
+                background-color: white;
+            }
+            h1{
+                color: rgba(233, 233, 233, 0.945);
+                font-size: 4rem;
+            }
+        p{
+            color: rgb(139, 139, 139);
+            font-family: "TTsuperM";
+            font-size: 1.3rem;
+            line-height: 25px;
+        }
+    }
+    .Cbottom{
+        text-align: center;
+        bottom: 0;
+        position: absolute;
+        p{
+            font-size: 1rem;
+            line-height: 25px;
+            font-family: "TTsuperM";
+            letter-spacing: 1px;
+        }
+    }
+}

@@ -1,0 +1,388 @@
+// IMPORTING OTHER CSS FILES 
+@import "./about";
+@import "./projects";
+@import "./contact";
+
+// GETTING SOME FONTS IN 
+@font-face{
+    font-family: "TTsuper";
+    src: url("../Media/fonts/TTSupermolotNeue-DemiBold.ttf");
+}
+@font-face{
+    font-family: "TTsuperM";
+    src: url("../Media/Fonts/TTSupermolotNeue-CondMed.ttf");
+}
+@font-face{
+    font-family: "TTsuperB";
+    src: url("../Media/Fonts/TTSupermolotNeue-ExtraBold.ttf");
+}
+
+:root{
+    --primary-color:#F2F2F2;
+    --secondary-color:rgb(5, 5, 5);
+    --tertiary-color:black;
+}
+
+// CREATING CUSTOM SELECTION 
+::selection{
+    color: var(--primary-color);
+    background-color: rgb(78, 75, 75);
+}
+// GENERAL CSS
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+    position: relative;
+}
+.preloader{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: black;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    font-family: "TTsuper";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1{
+        color: white;
+    }
+    .bar{
+        width: 30%;
+        background-color: rgba(255, 255, 255, 0.281);
+        height: 2px;
+        margin: 20px;
+        border-radius: 5px;
+        position: relative;
+    }
+    .bar::after{
+        width: 100%;
+        content: '';
+        position: absolute;
+        background:white;
+        height: 2px;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        animation: width 5s ease-in-out;
+    }
+    @keyframes width{
+        0%{
+            width: 0%;
+        }
+        25%{
+            width: 25%;
+        }
+        50%{
+            width: 50%;
+        }
+        75%{
+            width: 75%;
+        }
+        100%{
+            width: 100%;
+        }
+       
+    }
+    h2{
+        color: white;
+    }
+}
+.HamburgerMenu{
+    font-family: "TTsuper";
+    clip-path: circle(50% at 100% 3%);
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 2;
+    transition:  0.7s ease-in-out;
+    transition-property:background, width,height;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    ul{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        justify-content: center;
+        top: 14%;
+        right: 10.5%;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        li{
+            font-size: 3rem;
+            line-height: 70px;
+            a{
+            color: white;
+            text-decoration: none;
+            letter-spacing: 1px;
+            }
+        }
+    }
+}
+// HIDING SCROLLBAR 
+body::-webkit-scrollbar{
+    background: transparent;
+    width: 5px;
+    margin-right: 10px;
+    display: none;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(151, 151, 151, 0.397);   
+    border-radius: 5px;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+
+
+    // HOME PAGE STYLING
+    #particles-js{
+        width: 100%;
+        height: 100vh;
+    }
+    #home{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        a{  z-index: 1;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+        .logo{
+            color: rgb(202, 202, 202);
+            z-index: 1;
+            cursor: pointer;
+            position: fixed;
+            font-family: "TTsuper";
+            top: 35px;
+            left: 40px;
+            font-size: 1.5rem;
+            text-align: left;
+            width: 80px;
+        }
+        .logo:hover{
+            color: white;
+        }
+        .Hname{
+            position: absolute;
+            top: 40px;
+            width: 100%;
+            text-align: center;
+            font-family: "TTsuper";
+            font-size: 1.2rem;
+            cursor: default;
+            text-transform: uppercase;
+            color: rgb(202, 202, 202);
+        }
+        .Hname:hover{
+            color: white;
+        }
+        .menu{
+            transform: rotate(90deg);
+            width: 35px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top:35px;
+            right: 45px;
+            cursor:pointer;
+            pointer-events: all;
+            z-index: 2;
+        }
+        .menu:hover .Hline{
+            transform: Rotate(90deg);
+        }
+        .menu:hover .Hline::after{
+            width: 100%;
+            background-color: white;
+        }
+        .menu:hover .Hline::before{
+            width: 100%;
+            background-color: white;
+        }
+        .Hline::after,.Hline::before{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 75%;
+            background-color: rgb(202, 202, 202);
+            border-radius: 10px;
+        }
+        .Hline::before{
+            transform: translateY(-8px);
+            transition: all 0.3s ease-in-out;
+        }
+        .Hline::after{
+            transform: translateY(8px);
+            transition: all 0.3s ease-in-out;
+        }
+        .Hline{
+            height: 2px;
+            width: 100%;
+            background-color: rgb(202, 202, 202);
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+        .open .Hline{
+            background: transparent;
+        }
+        .open .Hline::after{
+            transform: rotate(45deg);
+        }
+        .open .Hline::before{
+            transform: rotate(-45deg);
+        }
+        .heading{
+            margin-top: 200px
+        }
+        h1{
+            width: 100%;
+            padding: 0.5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: "TTsuper";
+            font-size: 5rem;
+            color: rgb(230, 228, 228);
+            overflow: hidden;
+        }
+        h1 span{
+           background:black;
+          display: inline-block;
+           transform: translateY(100%);
+        }
+        .social{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            bottom: 0;
+            left: 40px;
+            align-items: center;
+            justify-content: center;
+            .socials{
+                display: flex;
+                flex-direction: column;
+                img{
+                    opacity: 0.7;
+                    margin-bottom: 14px;
+                    transition:all 0.2s ease-in-out;
+                    padding: 5px;
+                }
+                img:hover{
+                    transform: translateY(-5px);
+                    opacity: 1;
+                }
+            }
+            .line{
+                width: 0.17em;
+                height: 100px;
+                background-color: rgb(141, 139, 139);
+            }
+        }
+        .mouse-scroll,
+        .mouse-scroll::after,
+        .mouse-scroll::before{
+            position: absolute;
+            left:50%;
+            transform: translate(-50%, -80px);
+        }
+        .mouse-scroll::after{
+            content: '';
+            width: 5px;
+            height: 7px;
+            background: rgb(141, 139, 139);
+            border-radius:5px ;
+            transform: translate(-10%, 4px);
+            margin-left: -2px;
+            animation: scrolldown 2.5s ease-in-out infinite;
+        }
+        .mouse-scroll{
+            width: 20px;
+            height: 30px;
+            box-shadow: inset 0 0 0 2px rgb(141, 139, 139);
+            border-radius: 23px;
+            position: absolute;
+            bottom: -70px;
+        }
+        @keyframes scrolldown{
+          0%{
+              transform: translateY(5px);
+              opacity: 1;
+          }
+          20%{
+            transform: translateY(15px);
+            opacity: 1;
+        } 
+        60%{
+            transform: translateY(15px);
+            opacity: 1;
+        }
+        100%{
+            transform: translateY(5px);
+            opacity: 1;
+        }
+        }
+        .theme{
+            cursor: pointer;
+            position: fixed;
+            height: 20vh;
+            bottom: 0;
+            right: -58px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            span{
+                color: rgb(202, 202, 202);
+                transform: rotate(90deg) translateX(-165px);
+                font-family: "TTsuperM";
+                font-size: 0.9rem;
+                padding: 10px;
+                transition: all 0.2s ease-in-out;
+            }
+            span:hover{
+                color: white;
+                transform:rotate(90deg) translateX(-170px);
+            }
+            .line{
+                position: fixed;
+                width: 0.12em;
+                height: 100px;
+                bottom: 0;
+                background-color: rgb(141, 139, 139);
+            }
+        }
+    }
+    
+}
