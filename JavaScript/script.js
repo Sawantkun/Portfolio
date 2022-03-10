@@ -94,7 +94,7 @@ ScrollTrigger.create({
 
 // animations 
 const timeline=gsap.timeline({defaults:{duration:0.5,opacity:0}});
-timeline.to('.reveal',{stagger:0.2,y:0,ease:'SlowMo.easeOut',opacity:1,background:'transparent',delay:5})
+timeline.to('.reveal',{stagger:0.2,y:0,ease:'SlowMo.easeOut',opacity:1,background:'transparent',delay:5.5})
         .from('#particles-js',{opacity:0})
         .from('.Hname',{y:-100})
         .from('.mouse-scroll',{y:-50},'-=0.5')
