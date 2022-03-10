@@ -5,7 +5,7 @@ window.addEventListener('load',()=>{
     setTimeout(()=>{
         loader.style.display="none";
         body.style.overflow="visible";
-    },5000);
+    },1);
 })
 
 
@@ -39,7 +39,6 @@ menu.addEventListener('click',e=>{
     
 });
 link1.addEventListener('click',()=>{
-    console.log('clicked');
     menu.classList.remove('open');
         hamburger.style.width="100px";
         hamburger.style.height="100px";
@@ -47,7 +46,6 @@ link1.addEventListener('click',()=>{
         list.style.opacity="0";
 })
 link2.addEventListener('click',()=>{
-    console.log('clicked');
     menu.classList.remove('open');
         hamburger.style.width="100px";
         hamburger.style.height="100px";
@@ -55,7 +53,6 @@ link2.addEventListener('click',()=>{
         list.style.opacity="0";
 })
 link3.addEventListener('click',()=>{
-    console.log('clicked');
     menu.classList.remove('open');
         hamburger.style.width="100px";
         hamburger.style.height="100px";
@@ -63,7 +60,6 @@ link3.addEventListener('click',()=>{
         list.style.opacity="0";
 })
 link4.addEventListener('click',()=>{
-    console.log('clicked');
     menu.classList.remove('open');
         hamburger.style.width="100px";
         hamburger.style.height="100px";
@@ -98,7 +94,7 @@ ScrollTrigger.create({
 
 // animations 
 const timeline=gsap.timeline({defaults:{duration:0.5,opacity:0}});
-timeline.to('.reveal',{stagger:0.2,y:0,ease:'SlowMo.easeOut',opacity:1,background:'transparent',delay:5})
+timeline.to('.reveal',{stagger:0.2,y:0,ease:'SlowMo.easeOut',opacity:1,background:'transparent',delay:1})
         .from('#particles-js',{opacity:0})
         .from('.Hname',{y:-100})
         .from('.mouse-scroll',{y:-50},'-=0.5')

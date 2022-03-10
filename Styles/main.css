@@ -73,9 +73,10 @@
 #About .Acontainer .Acontent p {
   color: #dfdfdf;
   font-family: "TTsuperM";
-  line-height: 20px;
+  line-height: 25px;
   margin-bottom: 10px;
-  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
 }
 
 #About .Acontainer .Acontent .liner {
