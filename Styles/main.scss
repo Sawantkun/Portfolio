@@ -363,6 +363,7 @@ body::-webkit-scrollbar-thumb{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            z-index: 2;
             span{
                 color: rgb(202, 202, 202);
                 transform: rotate(90deg) translateX(-165px);
