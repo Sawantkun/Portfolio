@@ -281,13 +281,14 @@ img {
   /* display: none; */
 }
 .home__scroll-button{
-  color: var(--first-color);
+  color: var(--hue-color);
   transition: .3s;
 }
 .home__scroll-button:hover{
   transform: translateY(.25rem);
 }
 .home__scroll-mouse{
+  color: var(--hue-color);
   font-size: 2rem;
 }
 .home__scroll-name{
@@ -297,6 +298,7 @@ img {
   margin-right: var(--mb-0-25);
 }
 .home__scroll-arrow{
+  color: var(--hue-color);
   font-size: 1.25rem;
 }
 
@@ -334,7 +336,7 @@ img {
   flex-wrap: wrap;
 }
 .about__info img{
-  margin: 0 10px 0 0 ;
+  margin: 0 10px 10px 0 ;
 }
 .about__info-name{
   font-size: var(--smaller-font-size);
@@ -440,7 +442,7 @@ img {
   content: '' !important;
 }
 .swiper-portfolio-icon{
-  font-size: 2rem;
+  font-size: 1rem;
   color: var(--first-color);
 }
 .swiper-button-prev{
