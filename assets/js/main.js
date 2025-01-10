@@ -68,7 +68,7 @@ var typewriter = new Typewriter(app, {
     loop: true
 });
 
-typewriter.typeString('Frontend Developer')
+typewriter.typeString('FullStack Developer')
     .pauseFor(2500)
     .deleteAll()
     .typeString('React Enthusiast')
